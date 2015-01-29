@@ -1,7 +1,6 @@
 # IPython Utilities
 
-Description: This script install icons and desktop files ( icons ) to easily access IPython
-and doesn't need root access.
+Description: This script install icons and desktop files ( icons ) to easily access IPython.
 
 It provides:
 
@@ -12,6 +11,8 @@ It provides:
 
 The launchers script: termnal.sh can be used to create ~*.desktop files that launch command line applications and
 interactives shells like Haskell, Matlab ...
+
+## Create Desktop File and Customize Launchers
 
 File: IPython3.desktop
 
@@ -31,3 +32,46 @@ Terminal=false
 Type=Application
 
 ```
+
+## Installation
+
+```bash
+
+$ git clone https://github.com/caiorss/IPython-Tools
+$ cd IPython-Tools
+$ chmod +x install.sh
+$ ./install.sh
+
+``` 
+
+## IPython QT Console Customization
+
+Documentation:
+
+    * http://ipython.org/ipython-doc/dev/interactive/qtconsole.html
+    * https://github.com/damontallen/IPython-quick-ref-sheets/tree/master/Helpful_projects
+
+
+```
+
+$ ipython qtconsole --ConsoleWidget.font_size=11 \                 # Set Font Size
+--IPythonWidget.gui_completion=ncurses 
+--colors=linux  \                                                  # Set Color Scheme
+--ConsoleWidget.font_family="Anonymous Pro"                        # Set Font Type          
+--ConsoleWidget.font_size=9 \                                      # Set Font Size
+--matplotlib inline                                                # Figures embedded in your session,
+
+--pylab
+--pylab inline
+
+```
+
+Possible Colors:
+
+```
+  xcode friendly vs monokai rrt igor perldoc paraiso_light native colorful murphy paraiso_dark bw vim fruity 
+  borland pastie trac tango emacs autumn manni
+
+```
+
+
