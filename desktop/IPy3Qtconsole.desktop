@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=IPython3 QTconsole
+GenericName=IPython
+Comment=IPython3 QTConsole Interactive Shell
+Exec=ipython3c qtconsole
+Icon=ipython
+Categories=Development;Utility;
