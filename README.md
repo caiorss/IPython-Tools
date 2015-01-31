@@ -60,6 +60,7 @@ $ ipython qtconsole --ConsoleWidget.font_size=11 \                 # Set Font Si
 --ConsoleWidget.font_family="Anonymous Pro"                        # Set Font Type          
 --ConsoleWidget.font_size=9 \                                      # Set Font Size
 --matplotlib inline                                                # Figures embedded in your session,
+--no-confirm-exit
 
 --pylab
 --pylab inline
@@ -75,3 +76,20 @@ Possible Colors:
 ```
 
 
+## Install Extension
+
+
+See also: 
+
+* [IPython Hello World Magic](http://catherinedevlin.blogspot.com.br/2013/07/ipython-helloworld-magic.html)
+* [Ipython Extension Index](https://github.com/ipython/ipython/wiki/Extensions-Index)
+
+```python
+
+%install_ext <path or URL>
+
+%install_ext https://bitbucket.org/birkenfeld/ipython-physics/raw/default/physics.py
+
+%install_ext %install_ext /home/tux/PycharmProjects/Ipython/extension/helloworld.py
+
+```

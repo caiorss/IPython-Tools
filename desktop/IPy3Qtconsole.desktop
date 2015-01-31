@@ -5,6 +5,6 @@ Encoding=UTF-8
 Name=IPython3 QTconsole
 GenericName=IPython
 Comment=IPython3 QTConsole Interactive Shell
-Exec=ipython3c qtconsole --colors=linux  --ConsoleWidget.font_size=11
+Exec=ipython3c qtconsole --colors=linux  --ConsoleWidget.font_size=11 --no-confirm-exit
 Icon=ipython
 Categories=Development;Utility;
